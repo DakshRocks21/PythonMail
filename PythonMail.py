@@ -1,18 +1,20 @@
+# Author https://github.com/DakshRocks21/
+
 import smtplib
 
-'''For 1 person'''
-port = 465
-smtp_server = "MAIL-SERVER" # "smtp.gmail.com" for gmail
-sender_email = "MAILER"
-receiver_email = "REVEICER"
-password = input("Type your password and press enter:")
-message = "MESSAGE"
-context = ssl.create_default_context()
-with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-    server.login(sender_email, password)
-    server.sendmail(sender_email, receiver_email, message)
+#For 1 person
+#port = 465
+#smtp_server = "MAIL-SERVER" # "smtp.gmail.com" for gmail
+#sender_email = "123@gmail.com"
+#receiver_email = "456@gmail.com"
+#password = input("Type your password and press enter:")
+#message = "MESSAGE"
+#context = ssl.create_default_context()
+#with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+#    server.login(sender_email, password)
+#    server.sendmail(sender_email, receiver_email, message)
 
-'''For spamming people'''
+#Spamming people'''
 def email_spam():
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
